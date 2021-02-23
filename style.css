@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(90deg, #ffffff,#ebebeb);
+    background: url(img/card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(5px);
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255, 0.3));
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.code-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    width: 700px;
+}
+
+.code-container input{
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255, 0.3));
+}
+
+.code{
+    border-radius: 5px;
+    font-size: 75px;
+    height: 120px;
+    width: 100px;
+    border: 1px solid #eee;
+    margin: 1%;
+    text-align: center;
+    font-weight: 300;
+    -moz-appearance: textfield;
+}
+
+.code::-webkit-outer-spin-button, 
+.code::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code:focus{
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.25);
+    outline-color: red;
+}
+
+.info{
+    background-color: #eee;
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    color: #777;
+    border-radius: 5px;
+}
+
+
+.btn{
+    position: absolute;
+    top: 85%;
+    left: 48%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.418);
+    border: 0;
+}
+
+.btn.next{
+    background-color: rgb(255, 45, 45);
+}
+
+.btn.next:active{
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.btn{
+    outline: none;
+}
+
+.btn i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width: 600px){
+    .code-container{
+        flex-wrap: wrap;
+    }
+
+    .code{
+        font-size:60px;
+        height: 80px;
+        max-width: 70px;
+    }
+}
+
+
